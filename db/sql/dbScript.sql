@@ -52,7 +52,7 @@ create table if not exists `Usuario` (
 -- Cultivo
 insert into `Cultivo` (`nombre_comun`, `nombre_cientifico`, `descripcion`) values
 ('Papa', 'Solanum tuberosum', 'Planta perteneciente a la familia de las solanáceas, originaria de Sudamérica y cultivada por todo el mundo por sus tubérculos comestibles.'),
-('avena', 'Avena sativa', 'La avena es un cultivo versátil y de multiuso; se utiliza como suplemento para producir forraje verde en periodos críticos para alimentación del ganado, especialmente en otoño e invierno. Los granos cubiertos con cascara, y los granos pelados y desnudos, sin cáscara, son Importantes tanto en alimentación animal como en alimentar animal y salud humana.'),
+('Avena', 'Avena sativa', 'La avena es un cultivo versátil y de multiuso; se utiliza como suplemento para producir forraje verde en periodos críticos para alimentación del ganado, especialmente en otoño e invierno. Los granos cubiertos con cascara, y los granos pelados y desnudos, sin cáscara, son Importantes tanto en alimentación animal como en alimentar animal y salud humana.'),
 ('Trigo', 'Triticum spp', 'El trigo es una planta gramínea anual con espigas. Es decir, se trata de una especie de pasto. Su altura es variable, va desde treinta centímetros hasta un metro y medio de largo.' )
 
 -- Enfermedades

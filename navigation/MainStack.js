@@ -9,10 +9,15 @@ const Stack = createNativeStackNavigator();
 const MainStack = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator
+        screenOptions={{
+          animation: 'slide_from_right',
+          backAnimation: 'slide_from_left',
+        }}
+      >
 
-        <Stack.Screen name="StartScreen" component={StartScreen} />
-        <Stack.Screen name="OtherScreen" component={OtherScreen} />
+        <Stack.Screen name="Inicio" component={StartScreen} />
+        <Stack.Screen name="Home" component={OtherScreen} />
 
       </Stack.Navigator>
     </NavigationContainer>

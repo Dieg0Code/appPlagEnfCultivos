@@ -8,7 +8,7 @@ const StartScreen = ({ navigation }) => {
           <Image source={require('../imgs/logo.png')} />
           <CustomButton
             onPress={ () => {
-              navigation.navigate('OtherScreen')
+              navigation.navigate('Home')
             } }
           />
         </View>
