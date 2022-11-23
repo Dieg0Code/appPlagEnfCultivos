@@ -25,14 +25,14 @@ const OtherScreen = ({ navigation }) => {
     return (
         <View>
             <FlatList
-            style={{ backgroundColor: '#EBFDD7' }}
                 data={data}
+                contentContainerStyle={{ alignItems: 'center' }}
                 renderItem={({ item }) => (
-                    <TouchableOpacity>
+                    <TouchableOpacity
+                        onPress={() => navigation.navigate('Details', item)}
+                    >
                         <Card>
-                            <Text>{item.nombreCultivo}</Text>
-                            <Text>{item.nombreCientifico}</Text>
-                            <Text>{item.descripcion}</Text>
+                            <Text style={{ fontWeight: 'bold' }} >{item.nombreCultivo}</Text>
                         </Card>
                     </TouchableOpacity>
                 )}
