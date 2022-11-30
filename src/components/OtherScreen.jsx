@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, FlatList, TouchableOpacity } from 'react-native';
+import { View, Text, FlatList, TouchableOpacity, Image } from 'react-native';
 import Card from './Card';
 
 const OtherScreen = ({ navigation }) => {
@@ -8,17 +8,20 @@ const OtherScreen = ({ navigation }) => {
         {
             nombreCultivo: 'Papa',
             nombreCientifico: 'Solanum tuberosum',
-            descripcion: 'Planta perteneciente a la familia de las solanáceas, originaria de Sudamérica y cultivada por todo el mundo por sus tubérculos comestibles.'
+            descripcion: 'Planta perteneciente a la familia de las solanáceas, originaria de Sudamérica y cultivada por todo el mundo por sus tubérculos comestibles.',
+            image: require('../imgs/papa1.jpg'),
         },
         {
             nombreCultivo: 'Avena',
             nombreCientifico: 'Avena sativa',
-            descripcion: 'La avena es un cultivo versátil y de multiuso; se utiliza como suplemento para producir forraje verde en periodos críticos para alimentación del ganado, especialmente en otoño e invierno. Los granos cubiertos con cascara, y los granos pelados y desnudos, sin cáscara, son Importantes tanto en alimentación animal como en alimentar animal y salud humana.'
+            descripcion: 'La avena es un cultivo versátil y de multiuso; se utiliza como suplemento para producir forraje verde en periodos críticos para alimentación del ganado, especialmente en otoño e invierno. Los granos cubiertos con cascara, y los granos pelados y desnudos, sin cáscara, son Importantes tanto en alimentación animal como en alimentar animal y salud humana.',
+            image: require('../imgs/avena.jpg'),
         },
         {
             nombreCultivo: 'Trigo',
             nombreCientifico: 'Triticum spp',
-            descripcion: 'El trigo es una planta gramínea anual con espigas. Es decir, se trata de una especie de pasto. Su altura es variable, va desde treinta centímetros hasta un metro y medio de largo.'
+            descripcion: 'El trigo es una planta gramínea anual con espigas. Es decir, se trata de una especie de pasto. Su altura es variable, va desde treinta centímetros hasta un metro y medio de largo.',
+            image: require('../imgs/trigo.jpg'),
         }
     ]);
 
@@ -29,10 +32,11 @@ const OtherScreen = ({ navigation }) => {
                 contentContainerStyle={{ alignItems: 'center' }}
                 renderItem={({ item }) => (
                     <TouchableOpacity
-                        onPress={() => navigation.navigate('Details', item)}
+                        onPress={() => navigation.navigate('Detalles', item)}
                     >
                         <Card>
                             <Text style={{ fontWeight: 'bold' }} >{item.nombreCultivo}</Text>
+                            <Image source={item.image} style={{ width: 250, height: 200, marginTop: 30, borderRadius: 20 }} />
                         </Card>
                     </TouchableOpacity>
                 )}

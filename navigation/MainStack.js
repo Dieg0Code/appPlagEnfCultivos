@@ -18,8 +18,8 @@ const MainStack = () => {
       >
 
         <Stack.Screen name="Inicio" component={StartScreen} />
-        <Stack.Screen name="Home" component={OtherScreen} />
-        <Stack.Screen name="Details" component={DetailsScreen} />
+        <Stack.Screen name="Cultivos" component={OtherScreen} />
+        <Stack.Screen name="Detalles" component={DetailsScreen} />
 
       </Stack.Navigator>
     </NavigationContainer>
