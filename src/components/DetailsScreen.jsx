@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
     text: {
         fontSize: 20,
         color: '#349B6D',
-        textAlign: 'center',
+        textAlign: 'left',
         margin: 10,
         fontFamily: 'Roboto',
         fontWeight: 'bold',
